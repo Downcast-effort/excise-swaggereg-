@@ -42,7 +42,7 @@ public class SwaggerConfig implements WebMvcConfigurer {
                 .apiInfo(apiInfo())
                 .enable(f)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.dandelion.swaggereg.controller"))
+                .apis(RequestHandlerSelectors.any())
                 .paths(PathSelectors.any())
                 .build();
     }
